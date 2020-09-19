@@ -1,0 +1,218 @@
+body {
+}
+
+a {
+  text-decoration: none !important;
+}
+
+main {
+  color: $palette-txt-body;
+  
+  a {
+    color: $palette-txt-link-clicked;
+    
+    &:hover {
+      color: $palette-txt-link-clicked;
+      text-decoration: underline !important;
+    }
+  }
+
+  p a, li a {
+    text-decoration: none !important;
+  }
+
+
+  hr {
+    clear: both;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    clear: both;
+    font-family: $font-head;
+    font-weight: 700;
+//     background-color: $palette-light-bk;
+//     padding-top: 0.25em;
+//     padding-bottom: 0.12em;
+  }
+
+  h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+    color: inherit;
+  }
+
+  h1 {
+    font-weight: bold;
+    margin-bottom: 2.5rem;
+  }
+
+  img {
+    max-width: 100%;
+    padding-bottom: 0.5rem;
+  }
+
+  .blog-post-content {
+    li > p {
+      margin-top: 0;
+      margin-bottom: 0;
+      padding-bottom: 6px;
+      padding-top: 6px;
+    }
+  }
+
+  blockquote {
+    font-style: italic;
+    margin-left: 2.5rem;
+  }
+
+  @media (min-width: 750px) {
+    .blog-post-content {
+      max-width: 750px;
+      text-align: justify;
+    }
+  }
+  
+}
+
+.docs-content, .docs-table {
+  table {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  th {
+    font-family: $font-head;
+    background-color: $palette-txt-med;
+    color: $palette-txt-light;
+  }
+  
+  td {
+    vertical-align: top;
+    padding-right: 6px !important;
+    font-size: 92%;
+  }
+  
+  tbody > tr:nth-child(2n+0) > td {
+    background-color: $oc-gray-1 !important;
+  }
+}
+
+.navbar {
+  background-color: $palette-dark-bk-2;
+  border-bottom-color: $palette-orange !important;
+}
+
+.navbar-brand {
+  .project-name {
+    font-family: $font-head;
+    font-size: 24px;
+    font-weight: 800;
+  }
+}
+
+.full-view-height {
+  min-height: 100vh;
+}
+
+.install {
+  border: 1mm solid #888;
+  background-color: $oc-gray-4;
+  margin: 24px;
+  margin-top: 32px !important;
+  
+  h4 {
+    font-weight: 600;
+    margin-top: 10px;
+  }
+}
+
+p .install-cmd {
+  background-color: #fff;
+
+}
+
+.pyocd-footer {
+  background-color: $palette-dark-bk-1;
+  color: $palette-txt-light;
+  border-top-color: $palette-light-bk !important;
+
+  a {
+    color: $palette-txt-med;
+    text-decoration: none;
+  }
+}
+
+.hero {
+  background-color: $palette-light-bk;
+  
+  h1 {
+    font-family: $font-head;
+    color: $palette-dark-bk-2;
+    font-weight: 1000;
+  }
+}
+
+.lead {
+  font-size: 1.5rem !important;
+}
+
+.feature-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: .75rem;
+  
+  > svg {
+    width: 48px;
+    height: 48px;
+    color: $oc-gray-9;
+    filter: drop-shadow(0.07rem 0.07rem 0.1rem $oc-gray-6);
+  }
+}
+
+#features, #community {
+  font-weight: 300;
+  font-size: 1.1rem;
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+  }
+}
+
+#community {
+  a {
+    color: $palette-dark-bk-1;
+    text-decoration: none;
+  }
+}
+
+// code formatting
+
+p code {
+  background-color: $oc-gray-1;
+  border-radius: 5px;
+  
+  color: $palette-dark-bk-1 !important;
+
+  .highlighter-rouge {
+  }
+}
+
+pre code {
+  font-size: 0.92em;
+  // default color when not syntax highlighted
+  color: $oc-gray-7;
+}
+
+.highlight {
+//   background-color: $oc-gray-1;
+  border-radius: 3px;
+  padding: 4px;
+}
+
+div.highlight {
+  margin-bottom: 1rem;
+}
+
+pre.highlight {
+  margin-bottom: 0px;
+}
+

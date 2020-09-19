@@ -1,0 +1,177 @@
+.row {
+  margin: auto !important;
+}
+
+.sticky-top {
+  position: sticky;
+  position: -webkit-sticky;
+}
+
+
+.sidebar {
+  height: 100%;
+  width: 100%;
+
+//   position: sticky;
+//   top: 2px;
+
+  ul {
+    line-height: 130%;
+  }
+
+  ul.level-2 {
+    margin-left: 1em;
+  }
+
+  p {
+    margin-bottom: 0px;
+  }
+}
+
+// the toc elements are for the right sidebar (sidebar 2) with in-page links
+#toc {
+  list-style: none;
+  padding-left: 0;
+
+  .toc-entry {
+    list-style: none;
+    font-size: 95%;
+
+    > ul {
+      padding-left: 12px;
+    }
+
+    :any-link {
+      color: $primary !important;
+    }
+  }
+}
+
+.sidebar-header {
+  font-family: $font-head;
+  color: #666;
+  font-weight: 700;
+
+  &.level-1 {
+    font-size: 110%;
+  }
+  &.level-2 {
+    font-size: 95%;
+  }
+}
+
+.sidebar-item {
+  color: $oc-gray-9 !important;
+  font-family: $font-body;
+  font-weight: 400;
+  font-size: 95%;
+  margin: 0px;
+  padding: 0px;
+}
+
+.sidebar-item-selected {
+  font-weight: 600;
+  font-style: italic;
+}
+
+.sidebar-link {
+  color: $oc-gray-9 !important;
+
+  &:hover {
+    color: $primary !important;
+    text-decoration: underline !important;
+  }
+}
+
+.docs-sidebar-1 {
+  background-color: $oc-gray-1;
+}
+
+.docs-sidebar-2 {
+  background-color: $oc-gray-1;
+
+  ul {
+    margin-bottom: 0px;
+  }
+}
+
+.docs-content {
+
+  h1, h2, h3, h4, h5, h6 {
+    clear: none;
+  }
+
+}
+
+.docs-index {
+
+  background-color: $palette-light-bk;
+
+  font-size: 110%;
+
+  .docs-index-header {
+    font-family: $font-head;
+    font-weight: 700;
+    color: #666;
+
+    &.level-1 {
+      font-weight: 700;
+    }
+    &.level-2 {
+      font-weight: 700;
+    }
+  }
+
+  .sidebar-item {
+    color: $oc-gray-9 !important;
+    font-family: $font-head;
+    margin: 0px;
+    padding: 0px;
+
+    > a {
+      color: $oc-gray-9 !important;
+
+      &:hover {
+        color: $primary !important;
+        text-decoration: underline !important;
+      }
+
+    }
+  }
+
+  ul.level-2 {
+    margin-left: 1em;
+  }
+
+  p {
+    margin-bottom: 0px;
+  }
+}
+
+#scroll-top-link {
+  z-index: 1000;
+  position: fixed;
+  border-radius: 2px;
+  height: 30px;
+  width: 30px;
+  right: 30px;
+  bottom: 30px;
+  line-height: 30px;
+  text-decoration: none;
+  text-align: center;
+  opacity: 0.7;
+  background-color: $oc-white;
+  color: $oc-black;
+  
+  &:hover {
+    background-color: $oc-gray-0;
+    color: $oc-gray-b;
+    border: 1px solid $oc-gray-4;
+  }
+}
+
+@media print {
+  #scroll-top-link {
+    display: none;
+  }
+}

@@ -1,0 +1,49 @@
+{% assign docs_index_url = "/docs/index" | relative_url %}
+
+<div class="sidebar docs-sidebar-1" id="sidebar1">
+  <div class="p-4">
+    {%- for section in site.data.docs -%}
+    <h5 class="sidebar-header level-1">{{ section.title }}</h5>
+    <ul class="list-unstyled level-1">
+    {%- for item in section.docs -%}
+      {%- if item.title -%}
+        <li>
+        <p class="sidebar-header level-2">
+          {{ item.title }}
+        </p>
+        <ul class="list-unstyled level-2">
+        {%- for item2 in item.docs -%}
+          {%- assign item_url = item2 | prepend: "/docs/" -%}
+          {%- for p in site.docs -%}
+            {%- if p.url == item_url -%}
+            <li class="sidebar-item level-2">
+              {%- if page.url == item_url -%}
+              <p class="sidebar-item-selected">{{ p.title }}</p>
+              {%- else -%}
+              <a href="{{ p.url | relative_url }}" class="sidebar-link {% if page.url == "/" %}never-active{% endif %}">{{ p.title }}</a>
+              {%- endif -%}
+            </li>
+            {%- endif -%}
+          {%- endfor -%}
+        {%- endfor -%}
+          </ul>
+        </li>
+      {%- else -%}
+        {%- assign item_url = item | prepend: "/docs/" -%}
+        {%- for p in site.docs -%}
+          {%- if p.url == item_url -%}
+          <li class="sidebar-item level-1">
+            {%- if page.url == item_url -%}
+            <p class="sidebar-item-selected">{{ p.title }}</p>
+            {%- else -%}
+            <a href="{{ p.url | relative_url }}" class="sidebar-link {% if page.url == "/" %}never-active{% endif %}">{{ p.title }}</a>
+            {%- endif -%}
+          </li>
+          {%- endif -%}
+        {%- endfor -%}
+      {%- endif -%}
+    {%- endfor -%}
+    </ul>
+    {%- endfor -%}
+  </div>
+</div>

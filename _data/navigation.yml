@@ -1,0 +1,9 @@
+- title: "Documentation"
+  url: /docs/
+  order: 2
+- title: "Posts"
+  url: /posts/
+  order: 3
+- title: "<i class=\"bi bi-github\"></i>"
+  url: https://github.com/pyocd/pyOCD
+  order: 4

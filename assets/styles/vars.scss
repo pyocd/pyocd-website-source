@@ -1,0 +1,78 @@
+// foreground:background contrast ratio checker
+// https://webaim.org/resources/contrastchecker/
+
+$font-body: 'Nunito Sans', 'Helvetica Neue', sans-serif;
+$font-head: 'Sarabun', sans-serif;
+$font-mono: 'Roboto Mono', monospace;
+
+$palette-light-bk:    #F1F1F1;
+$palette-dark-bk-1:   #5B4D59;
+$palette-dark-bk-2:   #3E2E42;
+$palette-txt-light:   #FEFFFF;
+$palette-txt-med:     #999;
+$palette-txt-link-clicked:  #DE6D5E;
+$palette-txt-head:    #5B4D59;
+$palette-txt-body:    #636363;
+$palette-orange:      #DE6D5D;
+$palette-green:       #77B5A6;
+$palette-yellow:      #EEA540;
+
+$primary: $palette-dark-bk-2;
+$secondary: $palette-dark-bk-1;
+
+// Open color
+//
+//
+//
+//  v 1.6.2
+//
+//
+
+
+//  General
+//
+
+$oc-white:         #ffffff;
+$oc-black:         #000000;
+
+
+//  Gray
+//
+
+$oc-gray-list: (
+        "0": #F8F9FA,
+        "1": #F6F7FA,
+        "2": #F3F3F4,
+        "3": #F1F3F5,
+        "4": #E9ECEF,
+        "5": #DEE2E6,
+        "6": #ced4da,
+        "7": #adb5bd,
+        "8": #868e96,
+        "9": #666666,
+        "a": #495057,
+        "b": #343a40,
+        "c": #212529
+);
+
+$oc-gray-0: map-get($oc-gray-list, "0");
+$oc-gray-1: map-get($oc-gray-list, "1");
+$oc-gray-2: map-get($oc-gray-list, "2");
+$oc-gray-3: map-get($oc-gray-list, "3");
+$oc-gray-4: map-get($oc-gray-list, "4");
+$oc-gray-5: map-get($oc-gray-list, "5");
+$oc-gray-6: map-get($oc-gray-list, "6");
+$oc-gray-7: map-get($oc-gray-list, "7");
+$oc-gray-8: map-get($oc-gray-list, "8");
+$oc-gray-9: map-get($oc-gray-list, "9");
+$oc-gray-a: map-get($oc-gray-list, "a");
+$oc-gray-b: map-get($oc-gray-list, "b");
+$oc-gray-b: map-get($oc-gray-list, "c");
+
+
+:root {
+  --bs-body-font-family: "Nunito Sans", 'Helvetica Neue', sans-serif;
+  --bs-font-monospace: 'Roboto Mono', monospace;
+  
+}
+

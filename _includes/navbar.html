@@ -1,0 +1,25 @@
+<nav class="navbar navbar-expand-md navbar-dark p-0">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="{{ "/"|relative_url }}">
+      <img src="{{ "/assets/pyocd_logo_white.svg"|relative_url }}" height="42" width="auto" alt=""></img>
+    </a>
+    <a class="navbar-brand color-secondary" href="{{ "/" | relative_url }}">
+      <span class="display-lg project-name">pyOCD</span>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+      <ul class="navbar-nav">
+        {% assign sorted_pages = site.data.navigation | sort:"order" %}
+        {% for page in sorted_pages %}
+        <li class="nav-item mr-auto mx-1">
+          <a class="nav-link" href="{{ page.url | relative_url }}">{{ page.title }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</nav>

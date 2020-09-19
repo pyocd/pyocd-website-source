@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  {% include head.html %}
+  <body id="top">
+    <div class="full-view-height d-flex flex-column">
+      <div class="flex-shrink-0">
+        {% include navbar.html %}
+      </div>
+      <div class="container-fluid flex-grow-1 p-0">
+        <div class="row">
+          <div class="col-md-3 col-sm-0 d-sm-none d-md-block p-0">
+            {% include sidebar.html %}
+          </div>
+          <div class="col-md-9 col-sm-12 p-0">
+            <main role="main" class="content-scroll p-4" data-spy="scroll" data-target="#components-nav" data-offset="0">
+
+              {% assign docs_index_url = "/docs/index" | relative_url %}
+
+              {% if page.url != docs_index_url %}
+              <div class="row">
+                <div class="d-sm-block d-md-none">
+                  <p class=""><b>&larr;</b> <a href="{{ docs_index_url }}">Documentation index</a></p>
+                </div>
+              </div>
+              {% endif %}
+
+              <div class="row">
+                <div class="container docs-content">
+                  {% if page.title != "" %}
+                  <h1 class="mb-4 mt-0">{{ page.title }}</h1>
+                  {% endif %}
+                
+                  <!-- floating table of contents -->
+                  <div class="col-lg-4 col-md-3 float-md-end ms-md-3 mb-sm-3">
+                    <div class="sidebar docs-sidebar-2 p-4">
+                        <h5 class="sidebar-header">Contents</h5>
+                        {% toc %}
+                    </div>
+                  </div>
+                
+                  {{ content }}
+
+                </div>
+              </div>
+            </main>
+          
+          </div>
+        </div>
+      </div>
+
+      <div class="flex-shrink-0">
+        {% include footer.html %}
+      </div>
+      
+      <a href="#top" title="Scroll to top" id="scroll-top-link" aria-hidden="true">
+        <i class="bi bi-arrow-up-short"></i>
+      </a>
+    </div>
+    {% include scripts.html %}
+  </body>
+</html>
