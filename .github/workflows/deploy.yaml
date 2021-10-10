@@ -23,6 +23,8 @@ jobs:
           folder: _site
           ssh-key: ${{ secrets.DEPLOY_KEY }}
           repository-name: pyocd/pyocd.github.io
+          git-config-name: pyocd-bot
+          git-config-email: pyocd-bot-noreply@pyocd.io
           clean: true
           clean-exclude: |
             .nojekyll
