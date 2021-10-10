@@ -8,7 +8,7 @@
   - terminology
   - target-support
   - configuration
-  - user_scripts
+  - user-scripts
   - remote-probe-access
   - configuring-logging
   - security
@@ -31,7 +31,3 @@
     docs:
     - architecture
     - remote-probe-protocol
-#- title: Internal design
-#  docs:
-#  - architecture
-#  - remote-probe-protocol
