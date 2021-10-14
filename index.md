@@ -89,7 +89,7 @@ layout: home
     </div>
     <div class="ms-3">
       <h2>CMSIS-Packs</h2>
-      <p>Access the full set of Arm Cortex-M devices supported by 
+      <p>Access the full set of Arm Cortex-M devices supported by
       <a href="https://www.keil.com/dd2/pack/">CMSIS Device Family Packs</a>. Packs can
       managed by pyOCD and installed by part number, or downloads packs yourself.</p>
     </div>
@@ -133,9 +133,9 @@ layout: home
       </svg>
     </div>
     <div class="ms-3">
-      <a href="https://pyocd.slack.com"><h4>Slack</h4></a>
-      <p>We have a public Slack workspace for live discussion and collaborative support of pyOCD and the
-      other projects under the pyOCD umbrella. This is the place to go to get help, discuss ideas, and
+      <a href="https://join.slack.com/t/pyocd/shared_invite/zt-wmy3zvg5-nRLj1GBWYh708TVfIx9Llg"><h4>Slack</h4></a>
+      <p>We have a public [Slack workspace](https://pyocd.slack.com) for live discussion and collaborative support of
+      pyOCD and the other projects under the pyOCD umbrella. This is the place to go to get help, discuss ideas, and
       share tips with other users.</p>
     </div>
   </div>
