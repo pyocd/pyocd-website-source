@@ -59,6 +59,7 @@ exclude:
   - _docs/Doxyfile
   - _docs/doxygen.*
   - README.md
+  - build.sh
 
 plugins:
   - jekyll-toc
