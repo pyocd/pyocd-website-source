@@ -15,6 +15,7 @@
   - multicore-debug
 - title: Reference
   docs:
+  - builtin-targets
   - options
   - command-reference
 - title: Python API
