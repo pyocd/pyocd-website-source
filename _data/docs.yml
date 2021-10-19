@@ -1,34 +1,34 @@
 - title: Getting started
   docs:
   - installing
-  - installing-on-non-x86
-  - gdb-setup
+  - installing_on_non_x86
+  - gdb_setup
 - title: User documentation
   docs:
   - terminology
-  - target-support
+  - target_support
   - configuration
-  - user-scripts
-  - remote-probe-access
-  - configuring-logging
+  - user_scripts
+  - remote_probe_access
+  - configuring_logging
   - security
-  - multicore-debug
+  - multicore_debug
 - title: Reference
   docs:
   - builtin-targets
   - options
-  - command-reference
+  - command_reference
 - title: Python API
   docs:
-  - python-api
-  - api-examples
+  - python_api
+  - api_examples
 - title: Developers
   docs:
-  - developers-guide
-  - adding-new-targets
-  - how-to-build
-  - automated-tests
+  - developers_guide
+  - adding_new_targets
+  - how_to_build
+  - automated_tests
   - title: Internal design
     docs:
     - architecture
-    - remote-probe-protocol
+    - remote_probe_protocol

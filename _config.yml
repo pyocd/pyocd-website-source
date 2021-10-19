@@ -23,14 +23,14 @@ title: pyOCD
 site_title: pyOCD
 copyright: The PyOCD Authors
 lang: en-US
-subtitle: "Python debug tools for embedded devices"
-description: >- # this means to ignore newlines until "baseurl:"
-  pyOCD is an open source Python package for programming and debugging Arm Cortex-M microcontrollers
+subtitle: "Python debug tools for Arm embedded devices"
+description: >-
+  pyOCD is an open source Python package for programming and debugging Arm CoreSight based microcontrollers
   using multiple supported types of USB debug probes.
 search: false
 
 repo_url: https://github.com/pyocd/pyOCD
-github_edit_me_url: https://github.com/pyocd/pyOCD/edit/master/
+github_edit_me_url: https://github.com/pyocd/pyocd-website-source/
 
 markdown: kramdown
 kramdown:
@@ -46,7 +46,7 @@ sass:
   sass_dir: /assets/styles
 
 # Outputting
-permalink: /:categories/:title/
+permalink: /posts/:year/:month-:day-:title:output_ext
 # paginate: 10 # amount of posts to show
 # paginate_path: /page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
@@ -79,10 +79,7 @@ footer:
 collections:
   docs:
     output: true
-    permalink: /:collection/:name
-
-# toolbar:
-#   - documentation.md
+    permalink: /:collection/:path:output_ext
 
 pages:
   - title: Documentation

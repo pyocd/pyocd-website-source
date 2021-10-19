@@ -18,7 +18,7 @@ author_profile: false
         </p>
         <ul class="list-unstyled level-2">
         {%- for item2 in item.docs -%}
-          {%- assign item_url = item2 | prepend: "/docs/" -%}
+          {%- assign item_url = item2 | prepend: "/docs/" | append: ".html" -%}
           {%- assign found_page = false -%}
           {%- for p in site.docs -%}
             {%- if p.url == item_url -%}
@@ -35,7 +35,7 @@ author_profile: false
           </ul>
         </li>
       {%- else -%}
-        {%- assign item_url = item | prepend: "/docs/" -%}
+        {%- assign item_url = item | prepend: "/docs/" | append: ".html" -%}
         {%- assign found_page = false -%}
         {%- for p in site.docs -%}
           {%- if p.url == item_url -%}
