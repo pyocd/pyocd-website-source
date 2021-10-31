@@ -168,7 +168,7 @@ p .install-cmd {
   }
 }
 
-#features, #community {
+#features, #community, #recent {
   font-weight: 300;
   font-size: 1.1rem;
   
@@ -177,10 +177,25 @@ p .install-cmd {
   }
 }
 
-#community {
-  a {
-    color: $palette-dark-bk-1;
-    text-decoration: none;
+#recent {
+  background-color: $palette-light-bk;
+  
+  .card-body {
+    color: $oc-gray-7;
+    background-color: $palette-dark-bk-2 !important;
+    
+    h5 {
+      color: $oc-gray-6;
+    }
+    
+    .card-text {
+      font-size: 1.0rem;
+    }
+  }
+  
+  .card-footer {
+    color: $oc-gray-7 !important;
+    background-color: $palette-dark-bk-1 !important;
   }
 }
 
