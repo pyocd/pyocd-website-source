@@ -201,11 +201,15 @@ p .install-cmd {
 
 // code formatting
 
+code {
+  color: $oc-gray-9;
+}
+
 p code {
   background-color: $oc-gray-1;
   border-radius: 5px;
 
-  color: $palette-dark-bk-1 !important;
+  color: $oc-gray-9 !important;
 
   .highlighter-rouge {
   }
