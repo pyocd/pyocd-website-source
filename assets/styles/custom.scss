@@ -7,10 +7,10 @@ a {
 
 main {
   color: $palette-txt-body;
-  
+
   a {
     color: $palette-txt-link-clicked;
-    
+
     &:hover {
       color: $palette-txt-link-clicked;
       text-decoration: underline !important;
@@ -69,7 +69,7 @@ main {
       text-align: justify;
     }
   }
-  
+
 }
 
 .docs-content, .docs-table {
@@ -77,19 +77,19 @@ main {
     width: 100%;
     margin-bottom: 10px;
   }
-  
+
   th {
     font-family: $font-head;
     background-color: $palette-txt-med;
     color: $palette-txt-light;
   }
-  
+
   td {
     vertical-align: top;
     padding-right: 6px !important;
     font-size: 92%;
   }
-  
+
   tbody > tr:nth-child(2n+0) > td {
     background-color: $oc-gray-1 !important;
   }
@@ -117,7 +117,7 @@ main {
   background-color: $oc-gray-4;
   margin: 24px;
   margin-top: 32px !important;
-  
+
   h4 {
     font-weight: 600;
     margin-top: 10px;
@@ -142,7 +142,7 @@ p .install-cmd {
 
 .hero {
   background-color: $palette-light-bk;
-  
+
   h1 {
     font-family: $font-head;
     color: $palette-dark-bk-2;
@@ -159,7 +159,7 @@ p .install-cmd {
   align-items: center;
   justify-content: center;
   border-radius: .75rem;
-  
+
   > svg {
     width: 48px;
     height: 48px;
@@ -171,7 +171,7 @@ p .install-cmd {
 #features, #community, #recent {
   font-weight: 300;
   font-size: 1.1rem;
-  
+
   h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
   }
@@ -179,20 +179,20 @@ p .install-cmd {
 
 #recent {
   background-color: $palette-light-bk;
-  
+
   .card-body {
     color: $oc-gray-7;
     background-color: $palette-dark-bk-2 !important;
-    
+
     h5 {
       color: $oc-gray-6;
     }
-    
+
     .card-text {
       font-size: 1.0rem;
     }
   }
-  
+
   .card-footer {
     color: $oc-gray-7 !important;
     background-color: $palette-dark-bk-1 !important;
@@ -204,7 +204,7 @@ p .install-cmd {
 p code {
   background-color: $oc-gray-1;
   border-radius: 5px;
-  
+
   color: $palette-dark-bk-1 !important;
 
   .highlighter-rouge {
