@@ -6,10 +6,12 @@ layout: default
 
 <h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
 
+<div class="post-header">
 <p class="text-muted border-bottom">
   <strong>{{ page.date | date: "%b %-d, %Y" }}</strong>
   {% if page.author %}<br/>{{ page.author }}{% endif %}
   {% if page.meta %}<br/>{{ page.meta }}{% endif %}
 </p>
+</div>
 
 {{ content }}
