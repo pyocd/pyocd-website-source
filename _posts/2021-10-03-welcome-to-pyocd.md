@@ -2,9 +2,9 @@
 title: "Welcome"
 date: 2021-10-03
 categories:
-  - Blog
+  - blog
 tags:
-  - hello
+  - site
 author: Chris Reed
 excerpt: "The pyOCD website is now online, along with new community resources."
 ---
