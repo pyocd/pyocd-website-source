@@ -205,15 +205,15 @@ code {
   color: $oc-gray-9;
 }
 
-p code {
-  background-color: $oc-gray-1;
-  border-radius: 5px;
-
-  color: $oc-gray-9 !important;
-
-  .highlighter-rouge {
+p, li {
+  > code {
+    color: $oc-gray-9 !important;
+    background-color: $oc-gray-1;
+    border-radius: 5px;
   }
 }
+
+// .highlighter-rouge
 
 pre code {
   font-size: 0.92em;
@@ -222,7 +222,6 @@ pre code {
 }
 
 .highlight {
-//   background-color: $oc-gray-1;
   border-radius: 3px;
   padding: 4px;
 }
