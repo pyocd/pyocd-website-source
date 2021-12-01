@@ -158,10 +158,12 @@ layout: home
     </div>
     </a>
     <div class="ms-3">
-      <h4><a href="https://join.slack.com/t/pyocd/shared_invite/zt-wmy3zvg5-nRLj1GBWYh708TVfIx9Llg">Slack</a></h4>
+      <h4><a href="https://join.slack.com/t/pyocd/shared_invite/zt-zqjv6zr5-ZfGAXl_mFCGGmFlB_8riHA">Slack</a></h4>
       <p>We have a public <a href="https://pyocd.slack.com">Slack workspace</a> for live discussion and collaborative support of
       pyOCD and the other projects under the pyOCD umbrella. This is the place to go to get help, discuss ideas, and
-      share tips with other users.</p>
+      share tips with other users.
+      <a href="https://join.slack.com/t/pyocd/shared_invite/zt-zqjv6zr5-ZfGAXl_mFCGGmFlB_8riHA">Join with this
+      link.</a></p>
     </div>
   </div>
   <div class="col d-flex align-items-start">

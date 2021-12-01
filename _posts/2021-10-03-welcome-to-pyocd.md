@@ -20,7 +20,7 @@ first focus will be on improving the getting started and installation material. 
 a series of how-tos for specific debug probes and development boards.
 
 At the same time, we are launching a new Slack workspace, [pyocd.slack.com](https://pyocd.slack.com/).
-Use [this link](https://join.slack.com/t/pyocd/shared_invite/zt-wmy3zvg5-nRLj1GBWYh708TVfIx9Llg)
+Use [this link](https://join.slack.com/t/pyocd/shared_invite/zt-zqjv6zr5-ZfGAXl_mFCGGmFlB_8riHA)
 to join the workspace.
 
 The choice between Slack and Discord was not very easy. Open source projects that
