@@ -14,11 +14,14 @@
   - configuring_logging
   - security
   - multicore_debug
+  - semihosting
+  - swo_swv
 - title: Reference
   docs:
   - builtin-targets
   - options
   - command_reference
+  - env_vars
 - title: Python API
   docs:
   - python_api
