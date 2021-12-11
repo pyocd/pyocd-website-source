@@ -103,6 +103,22 @@
 
 }
 
+.alert {
+  // using table is odd, but gets the desired result with the alert neither clearing
+  // nor overlapping the on page TOC
+  display: table;
+
+  > p {
+    margin-bottom: 0px;
+  }
+}
+
+.alert-icon {
+  font-size: 200%;
+  float: left;
+  margin-right: 20px;
+}
+
 .docs-index {
 
   background-color: $palette-light-bk;
