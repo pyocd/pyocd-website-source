@@ -16,6 +16,7 @@
   - multicore_debug
   - semihosting
   - swo_swv
+  - target_notes
 - title: Reference
   docs:
   - builtin-targets
