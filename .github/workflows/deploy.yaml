@@ -9,15 +9,16 @@ jobs:
     environment: deployment
     steps:
       - name: Checkout
-        uses: actions/checkout@v2.3.1
+        uses: actions/checkout@v3
         with:
           submodules: 'true'
+          fetch-depth: 1
 
       - name: Build
         uses: jerryjvl/jekyll-build-action@v1
 
       - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@4.1.5
+        uses: JamesIves/github-pages-deploy-action@v4.3.3
         with:
           branch: main
           folder: _site
