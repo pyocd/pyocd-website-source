@@ -5,7 +5,6 @@
   - gdb_setup
 - title: User documentation
   docs:
-  - terminology
   - target_support
   - debug_probes
   - configuration
@@ -19,6 +18,7 @@
   - target_family_notes
 - title: Reference
   docs:
+  - terminology
   - builtin-targets
   - options
   - command_reference
@@ -27,6 +27,7 @@
   docs:
   - python_api
   - api_examples
+  - api/using_session_options
 - title: Developers
   docs:
   - developers_guide
@@ -36,4 +37,5 @@
   - title: Internal design
     docs:
     - architecture
+    - developer/board_ids
     - remote_probe_protocol
