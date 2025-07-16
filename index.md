@@ -40,6 +40,7 @@ layout: home
     <div class="ms-3">
       <h2>Gdbserver</h2>
       <p>Debugging with gdb via command line or IDE. Supported by VSCode
+      <a href="https://marketplace.visualstudio.com/items?itemName=Arm.vscode-cmsis-debugger">Arm CMSIS Debugger</a>,
       <a href="https://marketplace.visualstudio.com/items?itemName=marus25.cortex-debug">Cortex-Debug</a>
       plugin and
       <a href="https://projects.eclipse.org/projects/iot.embed-cdt">Eclipse Embedded CDT</a>.</p>
