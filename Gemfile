@@ -11,7 +11,7 @@ source "https://rubygems.org"
 
 # local, gem-based
 #gem "minimal-mistakes-jekyll"
-gem "jekyll", "~> 4.0.0"
+gem "jekyll", "~> 4.4.1"
 
 
 # jekyll-toc
@@ -31,5 +31,3 @@ gem "jekyll-toc"
 #   gem "jekyll-include-cache"
 #   gem "jekyll-algolia"
 # end
-
-

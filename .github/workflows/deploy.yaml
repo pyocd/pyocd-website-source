@@ -9,16 +9,22 @@ jobs:
     environment: deployment
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v7
         with:
           submodules: 'true'
           fetch-depth: 1
 
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.4'
+          bundler-cache: true
+
       - name: Build
-        uses: jerryjvl/jekyll-build-action@v1
+        run: bundle exec jekyll build --trace
 
       - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@v4.7.3
+        uses: JamesIves/github-pages-deploy-action@v4.9.0
         with:
           branch: main
           folder: _site
